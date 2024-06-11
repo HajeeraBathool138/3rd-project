@@ -568,7 +568,7 @@ div#ContactUs {
 }
 
 .cmt {
-    height: 250px;
+    height: 100%;
     background-color: #d7d8da;
     padding: 55px 385px;
 }

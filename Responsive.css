@@ -769,7 +769,7 @@
 
 @media only screen and (min-width:992px) and (max-width:1326px) {
     .nav-part1 {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     div#image-L {
@@ -779,6 +779,11 @@
 
     .wrapper img {
         margin-right: 0px;
+    }
+
+    .search {
+        padding: 0px 8px;
+        gap: 10px;
     }
 
     .hero_text {
@@ -855,6 +860,9 @@
 
     .input-box {
         order: 2;
+        width: 81%;
+        gap: 0rem;
+        justify-content: center;
     }
 
     input#inp {
@@ -872,10 +880,12 @@
     }
 
     .cart {
+        padding: 0px 8px;
         order: 3;
     }
 
     .bc-lang-genre {
         order: 4;
+        width: 385px;
     }
 }
