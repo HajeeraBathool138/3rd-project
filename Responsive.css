@@ -331,7 +331,7 @@
     .input-box {
         order: 2;
         width: 30%;
-        gap: 1rem;
+        gap: 0rem;
         justify-content: end;
         align-items: center;
     }
