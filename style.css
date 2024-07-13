@@ -772,8 +772,8 @@ label .fa-solid,
 
 .icon-image .hover-image {
     position: absolute;
-    height: 350px;
-    width: 300px;
+    height: 310px;
+    width: 260px;
     bottom: 100px;
     left: 50%;
     z-index: 0;
@@ -897,6 +897,7 @@ label .fa-solid,
         display: flex;
         flex-direction: column;
         gap: 5px;
+        overflow: hidden;
     }
 
     .container {
@@ -971,7 +972,7 @@ label .fa-solid,
     #toggle-container:checked~.container {
         display: flex;
         flex-wrap: wrap;
-        /* overflow: hidden; */
+        overflow: hidden;
         width: 95vw;
         padding: 15px 20px;
         height: 500px;
@@ -1037,7 +1038,7 @@ label .fa-solid,
     #toggle-container:checked~.container {
         display: flex;
         flex-wrap: wrap;
-        /* overflow: hidden; */
+        overflow: hidden;
         width: 95vw;
         padding: 15px 20px;
         height: 500px;
@@ -1103,7 +1104,7 @@ label .fa-solid,
     #toggle-container:checked~.container {
         display: flex;
         flex-wrap: wrap;
-        /* overflow: hidden; */
+        overflow: hidden;
         width: 95vw;
         padding: 15px 20px;
         height: 340px;
