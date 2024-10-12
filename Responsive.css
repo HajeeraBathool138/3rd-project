@@ -183,7 +183,7 @@
     .row12 {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
         align-items: center;
         padding: 20px 0px;
     }
@@ -208,7 +208,6 @@
         margin-left: 10px;
         padding: 17px 15px;
         width: 80%;
-        margin-top: 0px;
         border-radius: 10px;
         border-color: #cbcbcb;
     }
@@ -414,7 +413,8 @@
     }
 
     input#boxs1 {
-        width: 80%;
+        width: 60%;
+        margin-left: 40px;
     }
 
     .address {

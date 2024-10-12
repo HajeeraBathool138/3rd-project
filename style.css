@@ -23,6 +23,7 @@ nav#navbar {
     justify-content: center;
     align-items: end;
     flex-wrap: wrap;
+    width: -webkit-fill-available;
 }
 
 img.img {
@@ -247,9 +248,10 @@ img.img1 {
     font-family: 'Pacifico', sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 35px;
     width: 100%;
     margin-top: 75px;
+    text-align: center;
 }
 
 .row1-imgs {
@@ -393,8 +395,13 @@ button.btn {
 
 .wrapper {
     margin: 50px 35px;
-    width: 55%;
+    width: -webkit-fill-available;
     display: flex;
+    justify-content: center;
+}
+
+.text-box {
+    width: min-content;
 }
 
 .text-box h2 {
@@ -625,7 +632,6 @@ input#boxs {
 }
 
 input#boxs1 {
-    margin-left: 40px;
     margin-right: 0px;
     padding: 17px 15px;
     width: 1223px;
@@ -642,6 +648,7 @@ img#map-img {
 .address {
     margin: 90px 35px;
     display: flex;
+    justify-content: center;
 }
 
 .address img {
@@ -782,7 +789,7 @@ label .fa-solid,
     pointer-events: none;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s ease, z-index 0s, left 0.5s ease;
-    transition-delay: 0s, 0.5s, 0.5s;
+    transition-delay: 1s, 0.5s, 0.5s;
 }
 
 .icon-image:hover .hover-image {
@@ -881,7 +888,11 @@ label .fa-solid,
     transition-delay: 0s;
 }
 
-#toggle-container:checked~.container {
+#toggle-container-bakery:checked~#container-bakery,
+#toggle-container-sweets:checked~#container-sweets,
+#toggle-container-snacks:checked~#container-snacks,
+#toggle-container-cakes:checked~#container-cakes,
+#toggle-container-lassi-pasta-macroni:checked~#container-lassi-pasta-macroni {
     display: flex;
 }
 
@@ -893,7 +904,11 @@ label .fa-solid,
         align-items: center;
     }
 
-    #toggle-container:checked~.container {
+    #toggle-container-bakery:checked~#container-bakery,
+    #toggle-container-sweets:checked~#container-sweets,
+    #toggle-container-snacks:checked~#container-snacks,
+    #toggle-container-cakes:checked~#container-cakes,
+    #toggle-container-lassi-pasta-macroni:checked~#container-lassi-pasta-macroni {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -901,9 +916,10 @@ label .fa-solid,
     }
 
     .container {
-        height: 500px;
+        height: 800px;
         min-width: 100vw;
         align-items: baseline;
+        justify-content: flex-start;
         margin-bottom: 10px;
         display: none;
         margin-top: 0%;
@@ -969,11 +985,15 @@ label .fa-solid,
         gap: 5px;
     }
 
-    #toggle-container:checked~.container {
+    #toggle-container-bakery:checked~#container-bakery,
+    #toggle-container-sweets:checked~#container-sweets,
+    #toggle-container-snacks:checked~#container-snacks,
+    #toggle-container-cakes:checked~#container-cakes,
+    #toggle-container-lassi-pasta-macroni:checked~#container-lassi-pasta-macroni {
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
-        width: 95vw;
+        width: 90%;
         padding: 15px 20px;
         height: 500px;
     }
@@ -1008,7 +1028,7 @@ label .fa-solid,
         width: 130px;
         left: -100px;
         z-index: 12;
-        transform: translateX(80px);
+        transform: translateX(43px);
         transition: left 0.5s ease, z-index 0s, transform 0.5s ease;
         transition-delay: 0s, 0.5s, 0.5s;
     }
@@ -1035,7 +1055,11 @@ label .fa-solid,
         gap: 5px;
     }
 
-    #toggle-container:checked~.container {
+    #toggle-container-bakery:checked~#container-bakery,
+    #toggle-container-sweets:checked~#container-sweets,
+    #toggle-container-snacks:checked~#container-snacks,
+    #toggle-container-cakes:checked~#container-cakes,
+    #toggle-container-lassi-pasta-macroni:checked~#container-lassi-pasta-macroni {
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
@@ -1101,7 +1125,11 @@ label .fa-solid,
         gap: 5px;
     }
 
-    #toggle-container:checked~.container {
+    #toggle-container-bakery:checked~#container-bakery,
+    #toggle-container-sweets:checked~#container-sweets,
+    #toggle-container-snacks:checked~#container-snacks,
+    #toggle-container-cakes:checked~#container-cakes,
+    #toggle-container-lassi-pasta-macroni:checked~#container-lassi-pasta-macroni {
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
@@ -1184,7 +1212,6 @@ label .fa-solid,
     border-radius: 25px;
     font-size: 23px;
     letter-spacing: 1px;
-    margin-left: 46%;
 }
 
 .cart2 {
@@ -1350,4 +1377,32 @@ input[type="checkbox"] {
         display: none;
     }
 
+}
+
+i.fa-solid.fa-comments {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    margin: 0px;
+}
+
+.row12 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reach-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    width: -webkit-fill-available;
+    text-align: center;
 }
